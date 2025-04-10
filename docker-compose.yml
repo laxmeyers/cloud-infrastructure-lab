@@ -1,10 +1,10 @@
 services:
-  quick:                    # Name of the service
-    container_name: quick   # Name of the container
-    image: ghcr.io/jakeoverall/quick:latest  # Use the latest image from GHCR
+  recitree:                    # Name of the service
+    container_name: recitree   # Name of the container
+    image: ghcr.io/laxmeyers/recitree:latest  # Use the latest image from GHCR
     ports: 
       - "7045:8080"         # Map port 7045 on the host to port 8080 in the container
     env_file:
       - .env.quick          # Load environment variables from .env.quick file
     labels:
-      caddy.domain: x.recitree.org # Caddy label for domain routing <quick.gregslist.dev>
+      caddy.domain: recitree.org  # Caddy label for domain routing <quick.gregslist.dev>
