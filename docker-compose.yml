@@ -7,4 +7,4 @@ services:
     env_file:
       - .env.quick          # Load environment variables from .env.quick file
     labels:
-      caddy.domain: recitree.org  # Caddy label for domain routing <quick.gregslist.dev>
+      caddy.domain: x.recitree.org # Caddy label for domain routing <quick.gregslist.dev>
