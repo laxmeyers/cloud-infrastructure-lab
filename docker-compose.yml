@@ -1,7 +1,7 @@
 services:
   quick:                    # Name of the service
     container_name: quick   # Name of the container
-    image: need/something/here  # Use the latest image from GHCR
+    image: ghcr.io/laxmeyers/recitree:latest  # Use the latest image from GHCR
     ports: 
       - "7045:8080"         # Map port 7045 on the host to port 8080 in the container
     env_file:
